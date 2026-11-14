@@ -1,10 +1,12 @@
-import classes from "./Navbar.module.css"
+import classes from "./NavbarBase.module.css"
 import { NavLink } from "react-router-dom";
-import MobileMenu from "../MobileMenu/MobileMenu";
-import { NAV_LINKS } from "../../data/links";
+import MobileMenu from "../../MobileMenu/MobileMenu";
+import { NAV_LINKS } from "../../../data/links";
 
+// NAV_LINKS - массив с ссылками в src/data/links.js
+// стили для статчиного меню bg-color и color в .navbar
 
-const Navbar = () => {
+const NavbarBase = () => {
   
   return (
    <div className={`${classes.navbar} line-dark`}>
@@ -29,4 +31,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default NavbarBase;
