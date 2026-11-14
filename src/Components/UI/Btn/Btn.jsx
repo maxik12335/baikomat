@@ -1,19 +1,43 @@
 import classes from './Btn.module.css'
 import { NavLink } from 'react-router-dom';
 
-const Btn = ({children, isColor, link, ...props}) => {
+const Btn = ({children, isColor='', size='', to, ...props}) => {
   
   const STYLES = {
     dark: classes.dark,
     light: classes.light,
-    navbar: classes.navbar,
   }
 
+  const SIZES = {
+    sm: classes.sm,
+    md: classes.md,
+    lg: classes.lg,
+  }
+
+  const cls = [
+    classes.btn,
+    STYLES[isColor],
+    SIZES[size],
+    'text-sm'
+  ].filter(Boolean).join(' ');
+
+  if(to) {
+    return (
+      <NavLink className={cls} to={to} {...props}>
+        {children}
+      </NavLink>
+    )
+  }
+  
   return (
-    <NavLink className={`${classes.btn} ${STYLES[isColor]} text-sm`} to={link} {...props}>
+    <button className={cls} type="button" {...props}>
       {children}
-    </NavLink>
+    </button>
   )
+    
+
+  
+  
 }
 
 export default Btn;
