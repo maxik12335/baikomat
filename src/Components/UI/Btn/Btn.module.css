@@ -12,7 +12,10 @@
 
 .btn:hover {
   opacity: var(--color-hover-opacity);
-  box-shadow: 0 0px 12px rgba(255, 255, 255, 0.06);
+}
+
+.btn:disabled {
+  opacity: 0.5;
 }
 
 .dark {
