@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 // Импорты страниц
 import Main from "../Pages/Main/Main"
+import Catalog from '../Pages/Catalog/Catalog';
+import Product from '../Pages/Product/Product';
 
 const AppRouter = () => {
 
@@ -11,6 +13,8 @@ const AppRouter = () => {
 
       {/* menu */}
         <Route path="/" element={<Main />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/catalog/:id" element={<Product />} />
 
       {/* 404 */}
       <Route path="*" element={<Navigate to="/" />} />
