@@ -12,6 +12,10 @@
   top: var(--space-3); */
 }
 
+.close:hover {
+  opacity: var(--color-hover-opacity);
+}
+
 .close span {
   width: 100%;
   height: 1px;

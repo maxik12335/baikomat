@@ -1,7 +1,7 @@
 import classes from './Btn.module.css'
 import { NavLink } from 'react-router-dom';
 
-const Btn = ({children, isColor='', size='', to, ...props}) => {
+const Btn = ({children, isColor='', size='md', to, active,  ...props}) => {
   
   const STYLES = {
     dark: classes.dark,
@@ -18,6 +18,7 @@ const Btn = ({children, isColor='', size='', to, ...props}) => {
     classes.btn,
     STYLES[isColor],
     SIZES[size],
+    active ? classes.active : '',
     'text-sm'
   ].filter(Boolean).join(' ');
 
@@ -34,10 +35,7 @@ const Btn = ({children, isColor='', size='', to, ...props}) => {
       {children}
     </button>
   )
-    
-
-  
-  
+   
 }
 
 export default Btn;
