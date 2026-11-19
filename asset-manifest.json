@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/baikomat/static/css/main.6c2cb2bc.css",
-    "main.js": "/baikomat/static/js/main.158ba75b.js",
+    "main.js": "/baikomat/static/js/main.61da1fc2.js",
     "static/css/200.87c4a6a8.chunk.css": "/baikomat/static/css/200.87c4a6a8.chunk.css",
     "static/js/200.e079b917.chunk.js": "/baikomat/static/js/200.e079b917.chunk.js",
     "static/css/882.677ecd6b.chunk.css": "/baikomat/static/css/882.677ecd6b.chunk.css",
@@ -10,7 +10,7 @@
     "static/media/main.png": "/baikomat/static/media/main.6675fec0dd88da7af34f.png",
     "index.html": "/baikomat/index.html",
     "main.6c2cb2bc.css.map": "/baikomat/static/css/main.6c2cb2bc.css.map",
-    "main.158ba75b.js.map": "/baikomat/static/js/main.158ba75b.js.map",
+    "main.61da1fc2.js.map": "/baikomat/static/js/main.61da1fc2.js.map",
     "200.87c4a6a8.chunk.css.map": "/baikomat/static/css/200.87c4a6a8.chunk.css.map",
     "200.e079b917.chunk.js.map": "/baikomat/static/js/200.e079b917.chunk.js.map",
     "882.677ecd6b.chunk.css.map": "/baikomat/static/css/882.677ecd6b.chunk.css.map",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.6c2cb2bc.css",
-    "static/js/main.158ba75b.js"
+    "static/js/main.61da1fc2.js"
   ]
 }
