@@ -4,6 +4,7 @@ import { getLang } from '../../data/langs';
 import { CONTENT } from '../../data/content';
 import MainSection from '../../Section/pages/MainSection/MainSection';
 import CatalogSection from '../../Section/pages/CatalogSection/CatalogSection';
+import StepsSection from '../../Section/StepsSection/StepsSection';
 
 const Main = () => {
   const lang = getLang(useLocation().pathname);
@@ -11,8 +12,9 @@ const Main = () => {
 
   return (
     <>
-      <MainSection t={t.main} />;
+      <MainSection t={t.main} />
       <CatalogSection t={t.catalog} />
+      <StepsSection t={t.steps} />
     </>
   )
 };

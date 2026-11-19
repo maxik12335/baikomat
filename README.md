@@ -1,3 +1,3 @@
-git commit -a -m'fix style mainSection'
+git commit -a -m'add text StepsSection'
 git push
 npm run deploy
