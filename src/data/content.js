@@ -152,7 +152,7 @@ export const CONTENT = {
       address: 'Бангкок, район Сукхумвит, ул. Сой 11, офис 304',
       phone: '+84 987 654 321',
       email: 'info@baikomat.vn',
-      copyright: '© 2024 Baikomat. Все права защищены.',
+      copyright: '© 2026 Baikomat. Все права защищены.',
     },
     rides: {
       hero: {
@@ -360,7 +360,7 @@ export const CONTENT = {
       tagline: 'Moto rental with delivery and briefing. Available 24/7.',
       contactsLabel: 'Contacts',
       email: 'info@baikomat.vn',
-      copyright: '© 2024 Baikomat. All rights reserved.',
+      copyright: '© 2026 Baikomat. All rights reserved.',
     },
     rides: {
       hero: {
@@ -568,7 +568,7 @@ export const CONTENT = {
       tagline: 'Thuê xe máy với giao xe và hướng dẫn. Hoạt động 24/7.',
       contactsLabel: 'Liên hệ',
       email: 'info@baikomat.vn',
-      copyright: '© 2024 Baikomat. Tất cả quyền được bảo lưu.',
+      copyright: '© 2026 Baikomat. Tất cả quyền được bảo lưu.',
     },
     rides: {
       hero: {
