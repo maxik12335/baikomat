@@ -32,5 +32,20 @@
   color: var(--color-btn-text--light);
 }
 
+.sm {
+  min-width: 0px;
+  padding: var(--space-1) var(--space-2);
+}
+
+.md {
+  min-width: 200px;
+  padding: var(--space-2) var(--space-4);
+}
+
+.lg {
+  min-width: 250px;
+  padding: var(--space-2) var(--space-8);
+}
+
 @media (max-width: 576px) {
 }

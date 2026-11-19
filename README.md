@@ -1,3 +1,3 @@
-git commit -a -m'обновил структуру папок и доделал mainSection'
+git commit -a -m'update: mainSection'
 git push
 npm run deploy
