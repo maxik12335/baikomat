@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/baikomat/static/css/main.4069d9d7.css",
+    "main.js": "/baikomat/static/js/main.6b9c415d.js",
+    "static/css/664.31d6cfe0.chunk.css": "/baikomat/static/css/664.31d6cfe0.chunk.css",
+    "static/js/664.fc1fac58.chunk.js": "/baikomat/static/js/664.fc1fac58.chunk.js",
+    "static/css/561.31d6cfe0.chunk.css": "/baikomat/static/css/561.31d6cfe0.chunk.css",
+    "static/js/561.79e63069.chunk.js": "/baikomat/static/js/561.79e63069.chunk.js",
+    "static/css/840.31d6cfe0.chunk.css": "/baikomat/static/css/840.31d6cfe0.chunk.css",
+    "static/js/840.8354da45.chunk.js": "/baikomat/static/js/840.8354da45.chunk.js",
+    "index.html": "/baikomat/index.html",
+    "main.4069d9d7.css.map": "/baikomat/static/css/main.4069d9d7.css.map",
+    "main.6b9c415d.js.map": "/baikomat/static/js/main.6b9c415d.js.map",
+    "664.fc1fac58.chunk.js.map": "/baikomat/static/js/664.fc1fac58.chunk.js.map",
+    "561.79e63069.chunk.js.map": "/baikomat/static/js/561.79e63069.chunk.js.map",
+    "840.8354da45.chunk.js.map": "/baikomat/static/js/840.8354da45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4069d9d7.css",
+    "static/js/main.6b9c415d.js"
+  ]
+}
