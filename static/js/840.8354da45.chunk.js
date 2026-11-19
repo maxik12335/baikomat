@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkbaikomat=self.webpackChunkbaikomat||[]).push([[840],{840(e,a,s){s.r(a);s(43);var c=s(579);const n=()=>(0,c.jsx)("div",{className:"section line-dark",children:(0,c.jsx)("div",{className:"container",children:(0,c.jsx)("div",{className:"content",children:(0,c.jsx)("h2",{className:"h2 line-dark-text",children:"Vn"})})})});s.d(a,["default",0,n])}}]);
-//# sourceMappingURL=840.8354da45.chunk.js.map
