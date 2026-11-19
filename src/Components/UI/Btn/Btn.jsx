@@ -1,7 +1,7 @@
 import classes from './Btn.module.css'
 import { NavLink } from 'react-router-dom';
 
-const Btn = ({children, isColor='', size='md', to, active,  ...props}) => {
+const Btn = ({children, isColor='', size='md', to, href, active, anchor,  ...props}) => {
   
   const STYLES = {
     dark: classes.dark,
@@ -21,6 +21,22 @@ const Btn = ({children, isColor='', size='md', to, active,  ...props}) => {
     active ? classes.active : '',
     'text-sm'
   ].filter(Boolean).join(' ');
+
+  if(anchor) {
+    return (
+      <a className={cls} href={anchor} {...props}>
+        {children}
+      </a>
+    )
+  }
+
+  if(href) {
+    return (
+      <a className={cls} href={href} target='_blank' {...props}>
+        {children}
+      </a>
+    )
+  }
 
   if(to) {
     return (
