@@ -1,3 +1,3 @@
-git commit -a -m'add LangToggle to MobileMenu'
+git commit -a -m'fix StepSection'
 git push
 npm run deploy
