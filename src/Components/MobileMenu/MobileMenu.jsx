@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Burger from '../UI/Burger/Burger'
 import { CONTENT } from "../../data/content";
 import { getLang } from "../../data/langs";
+import LangToggle from '../../Components/UI/LangToggle/LangToggle'
 
 const MobileMenu = () => {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ const MobileMenu = () => {
           <div className={classes.mobyleMenu}>
             <div className={classes.header}>
               <p className="h3">baikomat</p>
+              <LangToggle />
               <Close onClick={() => setIsOpen(null)} />
             </div>
 
