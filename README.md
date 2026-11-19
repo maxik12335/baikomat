@@ -1,3 +1,3 @@
-git commit -a -m'update: mainSection'
+git commit -a -m'create catalog data'
 git push
 npm run deploy

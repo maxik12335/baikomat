@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <>
       <MainSection t={t.main} />;
-      <CatalogSection t={t.main} />
+      <CatalogSection t={t.catalog} />
     </>
   )
 };
