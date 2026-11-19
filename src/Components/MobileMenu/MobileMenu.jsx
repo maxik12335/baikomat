@@ -8,18 +8,20 @@ import Burger from '../UI/Burger/Burger'
 import { CONTENT } from "../../data/content";
 import { getLang } from "../../data/langs";
 import LangToggle from '../../Components/UI/LangToggle/LangToggle'
+import { useNavColor } from '../../utils/navbar'
 
 const MobileMenu = () => {
   const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false)
   const links = CONTENT[getLang(pathname)].nav;
+  const { navColor, textColor } = useNavColor();
 
   return (
     <div>
 
       <div className={classes.burgerBox}>
-        <p className="text-base">baikomat</p>
-        <Burger onClick={() => setIsOpen(true)} />
+        <p className="text-base" style={{ color: textColor }}>baikomat</p>
+        <Burger onClick={() => setIsOpen(true)} style={{ backgroundColor: textColor }}/>
       </div>
 
       {isOpen && 

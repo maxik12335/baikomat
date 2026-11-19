@@ -2,7 +2,7 @@ import classes from './RulesSection.module.css';
 
 const RulesSection = ({ t }) => {
   return (
-    <div className="section line-dark">
+    <div className="section line-dark" data-nav-text="#1A1A1A">
       <div className="container">
         <div className="content">
           <h2 className='h2'>{t.title}</h2>

@@ -160,6 +160,17 @@ export const CONTENT = {
         subtitle: 'групповые маршруты по Вьетнаму',
         img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig', // замени на своё фото
       },
+      entry: {
+        title: 'бронь',
+        subheader: 'Оставьте заявку — свяжемся в течение 15 минут и подтвердим бронь.',
+        note: 'отвечаем круглосуточно',
+        zalo: 'Zalo',
+        telegram: 'Telegram',
+        phone: '+84 987 654 321',
+        zaloLink: 'https://vk.ru/mr.senoval',   // замени на настоящую ссылку Zalo
+        telegramLink: 'https://max.ru/u/134302148', // проверь, max или telegram :)
+        phoneLink: 'tel:+84987654321',
+      },
       title: 'маршруты',
       btn: 'забронировать',
       items: [
@@ -357,6 +368,17 @@ export const CONTENT = {
         subtitle: 'group tours across Vietnam',
         img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig',
       },
+      entry: {
+        title: 'booking',
+        subheader: 'Leave a request — we will contact you within 15 minutes and confirm your booking.',
+        note: 'available 24/7',
+        zalo: 'Zalo',
+        telegram: 'Telegram',
+        phone: '+84 987 654 321',
+        zaloLink: 'https://vk.ru/mr.senoval',
+        telegramLink: 'https://max.ru/u/134302148',
+        phoneLink: 'tel:+84987654321',
+      },
       title: 'routes',
       btn: 'book now',
       items: [
@@ -553,6 +575,17 @@ export const CONTENT = {
         title: 'chuyến đi',
         subtitle: 'các cung đường nhóm khắp Việt Nam',
         img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig',
+      },
+      entry: {
+        title: 'đặt xe',
+        subheader: 'Để lại yêu cầu — chúng tôi sẽ liên hệ trong vòng 15 phút và xác nhận đặt xe.',
+        note: 'hỗ trợ 24/7',
+        zalo: 'Zalo',
+        telegram: 'Telegram',
+        phone: '+84 987 654 321',
+        zaloLink: 'https://vk.ru/mr.senoval',
+        telegramLink: 'https://max.ru/u/134302148',
+        phoneLink: 'tel:+84987654321',
       },
       title: 'tuyến đường',
       btn: 'đặt xe',

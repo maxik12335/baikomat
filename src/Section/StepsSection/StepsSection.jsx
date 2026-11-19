@@ -7,7 +7,7 @@ const StepsSection = ({ t }) => {
         <div className="content">
           <h2 className='h2'>{t.title}</h2>
 
-          <ul className={classes.list}>
+          <ul className={classes.list} data-nav-text="#f7f7f7">
             {t.items.map(step => (
               <li key={step.id} className={classes.item}>
                 {/* <p className={`${classes.step} text-base`}></p> */}

@@ -14,7 +14,7 @@ const buildPath = (pathname, lang) => {
   return lang === 'ru' ? clean : `/${lang}${clean === '/' ? '' : clean}`;
 };
 
-const LangToggle = () => {
+const LangToggle = ({...props}) => {
   const { pathname } = useLocation();
 
   return (
@@ -25,7 +25,7 @@ const LangToggle = () => {
           : pathname.startsWith(`/${code}`);
 
         return (
-          <Link key={code} className={`${classes.imgBtn} hover`} to={buildPath(pathname, code)}>
+          <Link key={code} className={`${classes.imgBtn} hover`} to={buildPath(pathname, code)} {...props}>
             {img}
             {/* <img
               className={`${classes.img} ${isActive ? '' : classes.dim}`}
