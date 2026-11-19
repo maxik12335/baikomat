@@ -1,95 +1,74 @@
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.container {
+  padding: var(--space-8) var(--space-0);
+  text-align: center;
 }
 
-.list {
+.textsBox {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.texts {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.nav {
   display: flex;
   align-items: center;
   gap: var(--space-2);
 }
 
 .link {
-  width: 50px;
-  height: 50px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-base);
+  cursor: pointer;
   display: block;
+  text-align: center;
+  padding: var(--space-2) var(--space-4);
+  width: fit-content;
+  border: none;
+  background-color: var(--color-btn-bg--dark);
+  color: var(--color-btn-text--dark);
+  min-width: 0px;
+  padding: var(--space-1) var(--space-2);
 }
 
-.img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;
+.link:hover {
+  opacity: var(--color-hover-opacity);
 }
 
-.imgMain {
-  width: 50%;
-  filter: drop-shadow(2px 4px 6px black) grayscale(0.1) brightness(0.9) opacity(0.9);
-  border-radius: 4px;
+.footer {
+  text-align: center;
 }
 
-@media (max-width: 992px) {
-
-}
+@media (max-width: 992px) {}
 
 @media (max-width: 768px) {
-  .content {
-    position: relative;
-    height: 500px;
-    justify-content: center;
-    align-items: flex-end;
+  .desctopMenu {
+    display: none;
   }
 
-  .textBox {
-    position: relative;
-    z-index: 1;
-    margin-bottom: var(--space-8);
-  }
-
-  .list {
-    justify-content: center;
-  }
-
-  .imgMain {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-size: contain;
-    filter: drop-shadow(2px 4px 6px black) grayscale(0.4) brightness(0.6) opacity(0.7);
-  }
-
-  .textBox h2 {
-    border-bottom: 1px solid color-mix(in srgb, #ffffff 28%, transparent);
+  .section {
+    background-color: var(--color-background);
+    color: var(--color-text);
   }
 }
 
 @media (max-width: 576px) {
-  
-  .content {
-    position: static;
-    height: auto;
+  .container {
+    padding: var(--space-8) 20px;
+  }
+  .nav {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  .imgMain {
-    position: static;
-    filter: drop-shadow(2px 4px 6px black) grayscale(0.1) brightness(0.9) opacity(0.9);
-  }
-
-  .content {
-    /* align-items: center; */
-    height: fit-content;
-    text-align: center;
-  }
-
-  .imgMain {
+  .nav a {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 
+  .container {
+    text-align: left;
+  }
 }

@@ -137,7 +137,23 @@ export const CONTENT = {
           text: 'Базовая страховка включена в стоимость. Расширенная страховка доступна по запросу за дополнительную плату для большей защиты.'
         }
       ],
-    }
+    },
+    banner: {
+        title: 'экстрим-заезды',
+        text: 'Хочешь не просто арендовать байк, а проехать по настоящим маршрутам — горные серпантины, перевалы и смотровые площадки? Присоединяйся к групповым заездам.',
+        btn: 'смотреть заезды',
+        to: '/rides',
+        img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig', // потом замени на свой баннер
+    },
+    footer: {
+      title: 'baikomat',
+      tagline: 'Аренда мототехники с доставкой и инструктажем. Работаем 24/7.',
+      contactsLabel: 'Контакты',
+      address: 'Бангкок, район Сукхумвит, ул. Сой 11, офис 304',
+      phone: '+84 987 654 321',
+      email: 'info@baikomat.vn',
+      copyright: '© 2024 Baikomat. Все права защищены.',
+    },
   },
 
   en: {
@@ -278,7 +294,23 @@ export const CONTENT = {
           text: 'Basic insurance is included in the price. Extended insurance is available upon request for an additional fee for greater protection.'
         }
       ],
-    }
+    },
+    banner: {
+      title: 'extreme rides',
+      text: 'Want more than just renting a bike? Join our guided group rides — mountain passes, scenic roads and viewpoints included.',
+      btn: 'view rides',
+      to: '/en/rides',
+      img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig',
+    },
+    footer: {
+      title: 'baikomat',
+      address: 'Bangkok, Sukhumvit Area, Soi 11, Office 304',
+      phone: '+84 987 654 321',
+      tagline: 'Moto rental with delivery and briefing. Available 24/7.',
+      contactsLabel: 'Contacts',
+      email: 'info@baikomat.vn',
+      copyright: '© 2024 Baikomat. All rights reserved.',
+    },
   },
 
   vn: {
@@ -419,6 +451,22 @@ export const CONTENT = {
           text: 'Bảo hiểm cơ bản đã bao gồm trong giá thuê. Bảo hiểm mở rộng có thể được yêu cầu với phí bổ sung để bảo vệ toàn diện hơn.'
         }
       ],
+    },
+    banner: {
+      title: 'chuyến đi mạo hiểm',
+      text: 'Không chỉ muốn thuê xe? Tham gia chuyến đi nhóm cùng chúng tôi — đèo núi, cung đường đẹp và những điểm ngắm cảnh tuyệt vời.',
+      btn: 'xem chuyến đi',
+      to: '/vn/rides',
+      img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig',
+    },
+    footer: {
+      title: 'baikomat',
+      address: 'Bangkok, khu vực Sukhumvit, đường Soi 11, văn phòng 304',
+      phone: '+84 987 654 321',
+      tagline: 'Thuê xe máy với giao xe và hướng dẫn. Hoạt động 24/7.',
+      contactsLabel: 'Liên hệ',
+      email: 'info@baikomat.vn',
+      copyright: '© 2024 Baikomat. Tất cả quyền được bảo lưu.',
     },
   },
 };

@@ -6,6 +6,8 @@ import MainSection from '../../Section/MainSection/MainSection';
 import CatalogSection from '../../Section/CatalogSection/CatalogSection';
 import StepsSection from '../../Section/StepsSection/StepsSection';
 import RulesSection from '../../Section/RulesSection/RulesSection';
+import BannerSection from '../../Section/BannerSection/BannerSection';
+import Footer from '../../Components/Footer/Footer';
 
 const Main = () => {
   const lang = getLang(useLocation().pathname);
@@ -17,6 +19,8 @@ const Main = () => {
       <CatalogSection t={t.catalog} />
       <StepsSection t={t.steps} />
       <RulesSection t={t.rentalRules} />
+      <BannerSection t={t.banner} />
+      <Footer t={t.footer}/>
     </>
   )
 };

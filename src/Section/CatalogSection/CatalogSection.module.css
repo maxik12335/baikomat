@@ -1,13 +1,18 @@
 .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-8);
+  gap: var(--space-4);
 }
 
 .item {
   display: grid;
   gap: var(--space-2);
   place-items: center;
+
+  /* рамка карточки */
+  /* box-shadow: var(--shadow-sm);
+  padding: var(--space-4) var(--space-4);
+  border-radius: var(--radius-sm); */
 }
 
 .itemTexts {

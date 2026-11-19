@@ -5,8 +5,6 @@ import { CONTENT } from "../../../data/content";
 import { getLang } from "../../../data/langs";
 import LangToggle from '../../UI/LangToggle/LangToggle'
 
-// NAV_LINKS - массив с ссылками в src/data/links.js
-// стили для статчиного меню bg-color и color в .navbar
 
 const NavbarBase = () => {
   const { pathname } = useLocation();
