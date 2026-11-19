@@ -154,6 +154,46 @@ export const CONTENT = {
       email: 'info@baikomat.vn',
       copyright: '© 2024 Baikomat. Все права защищены.',
     },
+    rides: {
+      hero: {
+        title: 'заезды',
+        subtitle: 'групповые маршруты по Вьетнаму',
+        img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig', // замени на своё фото
+      },
+      title: 'маршруты',
+      btn: 'забронировать',
+      items: [
+        {
+          id: 1,
+          name: 'Хайван — перевалы',
+          duration: '1 день',
+          price: '3500 ₽',
+          includes: ['гид', 'байк Winner X', 'топливо', 'фотосессия'],
+        },
+        {
+          id: 2,
+          name: 'Дельта Меконга',
+          duration: '2 дня',
+          price: '9000 ₽',
+          includes: ['гид', 'байк Wave 110', 'ночлег', 'паромы'],
+        },
+        {
+          id: 3,
+          name: 'Северные горы, Хазянг',
+          duration: '4 дня',
+          price: '24 000 ₽',
+          includes: ['гид', 'байк по выбору', 'ночлег', 'топливо', 'экипировка'],
+        },
+      ],
+      steps: {
+        title: 'как проходит заезд',
+        items: [
+          { id: 1, num: '1', label: 'Инструктаж', text: 'Перед выездом короткий брифинг: маршрут, правила движения, сигналы и безопасность. Проверяем экипировку и технику.' },
+          { id: 2, num: '2', label: 'Заезд с гидом', text: 'Едем колонной с опытным гидом впереди. Темп — по самой медленной паре, остановки на смотровых площадках каждые 30–40 минут.' },
+          { id: 3, num: '3', label: 'Фото и отдых', text: 'Кофе-брейки в локальных кафе, фото на лучших точках маршрута. Материалы с камеры гида — всем участникам в подарок.' },
+        ],
+      },
+    },
   },
 
   en: {
@@ -311,6 +351,46 @@ export const CONTENT = {
       email: 'info@baikomat.vn',
       copyright: '© 2024 Baikomat. All rights reserved.',
     },
+    rides: {
+      hero: {
+        title: 'rides',
+        subtitle: 'group tours across Vietnam',
+        img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig',
+      },
+      title: 'routes',
+      btn: 'book now',
+      items: [
+        {
+          id: 1,
+          name: 'Hai Van — Passes',
+          duration: '1 day',
+          price: '$43',
+          includes: ['guide', 'Winner X bike', 'fuel', 'photo session'],
+        },
+        {
+          id: 2,
+          name: 'Mekong Delta',
+          duration: '2 days',
+          price: '$110',
+          includes: ['guide', 'Wave 110 bike', 'stay', 'ferries'],
+        },
+        {
+          id: 3,
+          name: 'Northern Mountains, Ha Giang',
+          duration: '4 days',
+          price: '$290',
+          includes: ['guide', 'bike of choice', 'stay', 'fuel', 'gear'],
+        },
+      ],
+      steps: {
+        title: 'how the ride goes',
+        items: [
+          { id: 1, num: '1', label: 'Briefing', text: 'A short pre-ride briefing: route, traffic rules, hand signals and safety. We check your gear and the bike.' },
+          { id: 2, num: '2', label: 'Guided Ride', text: 'We ride in a column with an experienced lead guide. The pace follows the slowest rider, with viewpoint stops every 30–40 minutes.' },
+          { id: 3, num: '3', label: 'Photos & Rest', text: 'Coffee breaks at local cafés and photos at the best route spots. Shots from the guide\'s camera are a gift for every participant.' },
+        ],
+      },
+    },
   },
 
   vn: {
@@ -467,6 +547,46 @@ export const CONTENT = {
       contactsLabel: 'Liên hệ',
       email: 'info@baikomat.vn',
       copyright: '© 2024 Baikomat. Tất cả quyền được bảo lưu.',
+    },
+    rides: {
+      hero: {
+        title: 'chuyến đi',
+        subtitle: 'các cung đường nhóm khắp Việt Nam',
+        img: 'https://avatars.mds.yandex.net/get-mpic/4080064/2a00000191c6bb5780d735ead75029a5efb2/orig',
+      },
+      title: 'tuyến đường',
+      btn: 'đặt xe',
+      items: [
+        {
+          id: 1,
+          name: 'Hải Vân — đèo',
+          duration: '1 ngày',
+          price: '1 100 000 ₫',
+          includes: ['hướng dẫn viên', 'xe Winner X', 'xăng', 'chụp ảnh'],
+        },
+        {
+          id: 2,
+          name: 'Đồng bằng sông Cửu Long',
+          duration: '2 ngày',
+          price: '2 700 000 ₫',
+          includes: ['hướng dẫn viên', 'xe Wave 110', 'nghỉ đêm', 'phà'],
+        },
+        {
+          id: 3,
+          name: 'Núi phía Bắc, Hà Giang',
+          duration: '4 ngày',
+          price: '7 200 000 ₫',
+          includes: ['hướng dẫn viên', 'xe tùy chọn', 'nghỉ đêm', 'xăng', 'trang bị'],
+        },
+      ],
+      steps: {
+        title: 'chuyến đi diễn ra như thế nào',
+        items: [
+          { id: 1, num: '1', label: 'Hướng dẫn', text: 'Trước khi khởi hành có buổi hướng dẫn ngắn: lộ trình, luật giao thông, tín hiệu và an toàn. Kiểm tra trang bị và xe.' },
+          { id: 2, num: '2', label: 'Chạy cùng hướng dẫn viên', text: 'Đi thành đoàn với hướng dẫn viên giàu kinh nghiệm dẫn đầu. Tốc độ theo người chậm nhất, dừng ngắm cảnh mỗi 30–40 phút.' },
+          { id: 3, num: '3', label: 'Ảnh và nghỉ ngơi', text: 'Ghé cà phê địa phương, chụp ảnh tại những điểm đẹp nhất trên lộ trình. Ảnh từ máy quay của hướng dẫn viên là quà tặng cho mọi thành viên.' },
+        ],
+      },
     },
   },
 };
