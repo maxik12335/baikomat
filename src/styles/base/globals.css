@@ -4,13 +4,13 @@
 }
 
 .section::selection {
-  background-color: var(--color-background-dark);
-  color: var(--color-text-dark);
+  background-color: var(--color-background--dark);
+  color: var(--color-text--dark);
 }
 
 .section--dark {
-  background-color: var(--color-background-dark);
-  color: var(--color-text-dark);
+  background-color: var(--color-background--dark);
+  color: var(--color-text--dark);
 }
 
 .section--dark::selection {
@@ -38,7 +38,7 @@
 }
 
 .line-dark {
-  border-bottom: 1px solid color-mix(in srgb, var(--color-background-dark) 8%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-background--dark) 8%, transparent);
 }
 
 .text-down {

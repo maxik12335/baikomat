@@ -3,7 +3,7 @@
   border: none;
   box-shadow: var(--shadow-sm);
   border-radius: var(--radius-sm);
-  color: var(--color-background-dark);
+  color: var(--color-background--dark);
 }
 
 .input:focus {

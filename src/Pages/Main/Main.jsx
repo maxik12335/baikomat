@@ -10,7 +10,7 @@ const Main = () => {
     <div className='section line-dark'>
       <div className="container">
         <div className="content">
-          <h2 className='h2 line-dark-text'>обо мне</h2>
+          <h2 className='h2 line-dark-text'>Ru</h2>
           
         </div>
 

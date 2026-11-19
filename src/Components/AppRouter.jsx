@@ -3,9 +3,10 @@ import Loader from './loader/Loader';
 import { lazy, Suspense } from 'react';
 
 // Импорты страниц
-const Main =  lazy(() => import('../Pages/Main/Main'));
-const Catalog =  lazy(() => import('../Pages/Catalog/Catalog'));
-const Product =  lazy(() => import('../Pages/Product/Product'));
+const MainRu =  lazy(() => import('../Pages/Main/Main'));
+const MainEn =  lazy(() => import('../PagesEn/Main/Main'));
+const MainVn =  lazy(() => import('../PagesVn/Main/Main'));
+
 
 
 const AppRouter = () => {
@@ -13,12 +14,9 @@ const AppRouter = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        {/* Публичные */}
-
-        {/* menu */}
-          <Route path="/" element={<Main />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/catalog/:id" element={<Product />} />
+        <Route path="/" element={<MainRu />} />
+        <Route path="/en/*" element={<MainEn />} />
+        <Route path="/vn/*" element={<MainVn />} />
 
         {/* 404 */}
         <Route path="*" element={<Navigate to="/" />} />

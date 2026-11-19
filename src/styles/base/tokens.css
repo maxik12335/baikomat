@@ -1,9 +1,14 @@
 :root {
   /* цвета */
-  --color-background: #f7f7f7;
-  --color-text: #1A1A1A;
-  --color-background-dark: #1A1A1A;
-  --color-text-dark: #f7f7f7;
+  --color-background: #1A1A1A;
+  --color-text: #f7f7f7;
+  --color-background--dark: #1A1A1A;
+  --color-text--dark: #f7f7f7;
+  
+  --color-btn-text--dark: #f7f7f7;
+  --color-btn-bg--dark: #242424;
+  --color-btn-text--light: #353434;
+  --color-btn-bg--light: #e7e7e7;
 
   /* hover */
   --color-hover-opacity: 0.7;

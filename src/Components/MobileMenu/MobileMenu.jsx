@@ -1,19 +1,26 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Modal from '../Modal/Modal'
 import Close from '../UI/Close/Close'
 import { NAV_LINKS } from '../../data/links'
 import classes from './MobileMenu.module.css'
 import { useState } from 'react'
 import Burger from '../UI/Burger/Burger'
+import { NAV_LINKS_RU, NAV_LINKS_EN, NAV_LINKS_VN } from '../../data/links'
 
 const MobileMenu = () => {
+  const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false)
+  const links = pathname.startsWith('/en')
+      ? NAV_LINKS_EN
+      : pathname.startsWith('/vn')
+      ? NAV_LINKS_VN
+      : NAV_LINKS_RU;
 
   return (
     <div>
 
       <div className={classes.burgerBox}>
-        <p className="text-base">clear web</p>
+        <p className="text-base">baikomat</p>
         <Burger onClick={() => setIsOpen(true)} />
       </div>
 
@@ -21,12 +28,12 @@ const MobileMenu = () => {
         <Modal onClick={() => setIsOpen(null)}>
           <div className={classes.mobyleMenu}>
             <div className={classes.header}>
-              <p className="h3">clear web</p>
+              <p className="h3">baikomat</p>
               <Close onClick={() => setIsOpen(null)} />
             </div>
 
             <nav className={classes.menu}>
-              {NAV_LINKS.map(link => (
+              {links.map(link => (
                 <NavLink key={link.to} className={`${classes.link} text-base`} to={link.to} onClick={() => setIsOpen(null)}>
                   {link.label}
                 </NavLink>

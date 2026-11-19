@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: var(--space-1);
+  color: var(--color-text);
 }
 
 .header {
@@ -31,7 +32,7 @@
   margin-bottom: 15px;
   padding-bottom: 15px;
   width: 100%;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-background-dark) 8%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-background--dark) 8%, transparent);
 }
 
 .burgerBox {
