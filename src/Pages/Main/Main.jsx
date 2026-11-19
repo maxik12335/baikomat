@@ -1,22 +1,14 @@
-import { useState } from 'react';
-import classes from './Main.module.css'
-
-
-
+// Pages/Main/Main.jsx
+import { useLocation } from 'react-router-dom';
+import { getLang } from '../../data/langs';
+import { CONTENT } from '../../data/content';
+import MainSection from '../../Section/pages/MainSection/MainSection';
 
 const Main = () => {
+  const lang = getLang(useLocation().pathname);
+  const t = CONTENT[lang].main;
 
-  return (
-    <div className='section line-dark'>
-      <div className="container">
-        <div className="content">
-          <h2 className='h2 line-dark-text'>Ru</h2>
-          
-        </div>
-
-      </div>
-    </div>
-  )
-}
+  return <MainSection t={t} />;
+};
 
 export default Main;

@@ -28,7 +28,7 @@ const LangToggle = () => {
           : pathname.startsWith(`/${code}`);
 
         return (
-          <Link key={code} className={classes.imgBtn} to={buildPath(pathname, code)}>
+          <Link key={code} className={`${classes.imgBtn} hover`} to={buildPath(pathname, code)}>
             {img}
             {/* <img
               className={`${classes.img} ${isActive ? '' : classes.dim}`}

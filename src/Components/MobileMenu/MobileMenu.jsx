@@ -5,16 +5,13 @@ import { NAV_LINKS } from '../../data/links'
 import classes from './MobileMenu.module.css'
 import { useState } from 'react'
 import Burger from '../UI/Burger/Burger'
-import { NAV_LINKS_RU, NAV_LINKS_EN, NAV_LINKS_VN } from '../../data/links'
+import { CONTENT } from "../../data/content";
+import { getLang } from "../../data/langs";
 
 const MobileMenu = () => {
   const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false)
-  const links = pathname.startsWith('/en')
-      ? NAV_LINKS_EN
-      : pathname.startsWith('/vn')
-      ? NAV_LINKS_VN
-      : NAV_LINKS_RU;
+  const links = CONTENT[getLang(pathname)].nav;
 
   return (
     <div>
