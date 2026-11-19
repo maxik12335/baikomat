@@ -21,7 +21,7 @@ const LangToggle = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className={classes.footer}>
+    <div className={classes.toggle}>
       {LANGS.map(({ code, img }) => {
         const isActive = code === 'ru'
           ? !/^\/(en|vn)/.test(pathname)
