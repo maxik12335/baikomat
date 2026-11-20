@@ -11,7 +11,11 @@ const NavbarBase = () => {
   const { navColor, textColor } = useNavColor();
   const { pathname } = useLocation();
   const links = CONTENT[getLang(pathname)].nav;
-
+// на главной показываем только «экстрим», на заездах — только «главная»
+  const isOnRides = pathname.includes('/rides');
+  const visibleLinks = links.filter(link =>
+    isOnRides ? !link.to.includes('/rides') : link.to.includes('/rides')
+  );
   
   return (
    <div className={`${classes.navbar} line-dark`}>
@@ -21,7 +25,7 @@ const NavbarBase = () => {
           <p className="text-base" style={{ color: textColor }}>baikomat</p>
           <LangToggle style={{ color: textColor }}/>
           <div className={classes.menu}>
-            {links.map(link => (
+            {visibleLinks.map(link => (
               <NavLink key={link.to} className="text-sm hover" style={{ color: textColor }} to={link.to}>
                 {link.label}
               </NavLink>
